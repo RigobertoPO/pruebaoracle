@@ -1,0 +1,19 @@
+﻿@model List<MVC_Oracle.Models.CLIENTE>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table>
+    <thead></thead>
+    <tbody>
+        @foreach (var cli in Model)
+        {
+            <tr>
+                <td>@cli.NOMBRE </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
